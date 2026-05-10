@@ -58,14 +58,14 @@
 
 .logo-name {
     font-size: var(--text-lg);
-    font-weight: var(--font-bold);
-    color: var(--text-primary);
+    font-weight: var(--font-extrabold); /* Make it extra bold */
+    color: var(--gold); /* Make it golden */
 }
 
 .logo-highlight {
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--gold); /* Ensure highlight is also golden */
+    background: none;
+    -webkit-text-fill-color: var(--gold);
 }
 
 .nav-links {
@@ -450,8 +450,8 @@
 
 .footer-logo .logo-name {
     font-size: var(--text-lg);
-    font-weight: var(--font-bold);
-    color: var(--text-primary);
+    font-weight: var(--font-extrabold);
+    color: var(--gold);
 }
 
 .footer-desc {
