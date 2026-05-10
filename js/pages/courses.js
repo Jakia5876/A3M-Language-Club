@@ -27,6 +27,16 @@ async function renderCourses() {
                         <a href="#/pricing" class="btn btn-primary" style="width: 100%; justify-content: center; background: var(--gradient-chinese); border: none;">View Course</a>
                     </div>
                 </div>
+
+                <div class="card animate-slide-up stagger-3">
+                    <img src="https://images.unsplash.com/photo-1545424436-ce47fa47f12e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img" alt="Chinese Course Advanced" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <div class="badge badge-chinese mb-3" style="background: var(--gradient-chinese); color: white;">Chinese</div>
+                        <h3 class="mb-2">HSK 2 Intermediate Course</h3>
+                        <p class="mb-4 text-secondary">Expand your vocabulary and master conversational fluency for the HSK 2 exam.</p>
+                        <a href="#/pricing" class="btn btn-primary" style="width: 100%; justify-content: center; background: var(--gradient-chinese); border: none;">View Course</a>
+                    </div>
+                </div>
             </div>
         </div>
     `;
