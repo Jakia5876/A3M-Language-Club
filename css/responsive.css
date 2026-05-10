@@ -38,6 +38,13 @@
 }
 
 @media (max-width: 768px) {
+    :root {
+        --text-6xl: 2.5rem;
+        --text-5xl: 2rem;
+        --text-4xl: 1.75rem;
+        --text-3xl: 1.5rem;
+    }
+
     .nav-links, .auth-buttons, .theme-toggle {
         display: none;
     }

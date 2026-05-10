@@ -75,7 +75,7 @@ async function renderHome() {
                     <p>Join thousands of learners who are mastering Japanese and Chinese with A3M Language Club.</p>
                 </div>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6);">
                     <!-- Review 1 -->
                     <div class="card card-body animate-slide-up stagger-1">
                         <div class="rating mb-3">
