@@ -1,0 +1,222 @@
+/* ========================================
+   A3M Language Club - Design Tokens
+   ======================================== */
+
+:root {
+    /* Brand Colors */
+    --brand-primary: #6C5CE7;
+    --brand-primary-light: #A29BFE;
+    --brand-primary-dark: #5241C5;
+    --brand-secondary: #00CEC9;
+    --brand-secondary-light: #55EFC4;
+    --brand-accent: #FD79A8;
+    --brand-accent-light: #FDCB6E;
+
+    /* Japanese Aesthetic Colors */
+    --sakura: #FFB7C5;
+    --sakura-dark: #E8849B;
+    --indigo: #3F3CBB;
+    --matcha: #78C850;
+    --gold: #FFD700;
+    --crimson: #DC143C;
+
+    /* Chinese Aesthetic Colors */
+    --vermilion: #E34234;
+    --jade: #00A86B;
+    --dynasty-gold: #CFB53B;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+    --gradient-secondary: linear-gradient(135deg, #00CEC9 0%, #55EFC4 100%);
+    --gradient-accent: linear-gradient(135deg, #FD79A8 0%, #FDCB6E 100%);
+    --gradient-hero: linear-gradient(135deg, #0F0C29 0%, #302B63 50%, #24243E 100%);
+    --gradient-japanese: linear-gradient(135deg, #FFB7C5 0%, #6C5CE7 100%);
+    --gradient-chinese: linear-gradient(135deg, #E34234 0%, #FFD700 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    --gradient-dark-card: linear-gradient(145deg, rgba(30,30,45,0.9) 0%, rgba(20,20,35,0.95) 100%);
+
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-japanese: 'Noto Sans JP', sans-serif;
+    --font-chinese: 'Noto Sans SC', sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+
+    --leading-tight: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-3xl: 2rem;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0,0,0,0.25);
+    --shadow-glow: 0 0 20px rgba(108,92,231,0.3);
+    --shadow-glow-lg: 0 0 40px rgba(108,92,231,0.4);
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Z-index */
+    --z-dropdown: 50;
+    --z-sticky: 100;
+    --z-fixed: 200;
+    --z-modal-backdrop: 300;
+    --z-modal: 400;
+    --z-popover: 500;
+    --z-tooltip: 600;
+    --z-toast: 700;
+    --z-loading: 1000;
+
+    /* Layout */
+    --nav-height: 72px;
+    --sidebar-width: 280px;
+    --sidebar-collapsed: 72px;
+    --container-max: 1280px;
+    --container-lg: 1024px;
+    --container-md: 768px;
+    --container-sm: 640px;
+}
+
+/* ========================
+   DARK THEME (Default)
+   ======================== */
+[data-theme="dark"] {
+    --bg-primary: #0A0A1A;
+    --bg-secondary: #12122A;
+    --bg-tertiary: #1A1A3E;
+    --bg-card: #16162E;
+    --bg-card-hover: #1E1E42;
+    --bg-elevated: #1E1E3F;
+    --bg-input: #1A1A38;
+    --bg-nav: rgba(10, 10, 26, 0.85);
+    --bg-sidebar: #0E0E24;
+    --bg-modal: #16162E;
+    --bg-tooltip: #2A2A50;
+
+    --text-primary: #F0F0FF;
+    --text-secondary: #B0B0D0;
+    --text-tertiary: #7878A0;
+    --text-muted: #5A5A80;
+    --text-inverse: #0A0A1A;
+
+    --border-primary: rgba(108, 92, 231, 0.2);
+    --border-secondary: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(108, 92, 231, 0.4);
+    --border-input: rgba(255, 255, 255, 0.12);
+    --border-focus: var(--brand-primary);
+
+    --glass-bg: rgba(22, 22, 46, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    --scrollbar-track: #12122A;
+    --scrollbar-thumb: #2A2A50;
+    --scrollbar-thumb-hover: #3A3A60;
+}
+
+/* ========================
+   LIGHT THEME
+   ======================== */
+[data-theme="light"] {
+    --bg-primary: #FAFAFE;
+    --bg-secondary: #F0F0FA;
+    --bg-tertiary: #E8E8F5;
+    --bg-card: #FFFFFF;
+    --bg-card-hover: #F5F5FF;
+    --bg-elevated: #FFFFFF;
+    --bg-input: #F5F5FA;
+    --bg-nav: rgba(250, 250, 254, 0.9);
+    --bg-sidebar: #FFFFFF;
+    --bg-modal: #FFFFFF;
+    --bg-tooltip: #1A1A3E;
+
+    --text-primary: #1A1A2E;
+    --text-secondary: #4A4A6A;
+    --text-tertiary: #7878A0;
+    --text-muted: #9898B8;
+    --text-inverse: #FFFFFF;
+
+    --border-primary: rgba(108, 92, 231, 0.15);
+    --border-secondary: rgba(0, 0, 0, 0.08);
+    --border-hover: rgba(108, 92, 231, 0.3);
+    --border-input: rgba(0, 0, 0, 0.12);
+    --border-focus: var(--brand-primary);
+
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+    --scrollbar-track: #F0F0FA;
+    --scrollbar-thumb: #CCCCDD;
+    --scrollbar-thumb-hover: #AAAACC;
+
+    --shadow-xs: 0 1px 2px rgba(0,0,0,0.03);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.06);
+    --shadow-xl: 0 20px 25px rgba(0,0,0,0.06);
+}
+
+/* Status Colors */
+:root {
+    --success: #00B894;
+    --success-light: #55EFC4;
+    --success-bg: rgba(0, 184, 148, 0.1);
+    --warning: #FDCB6E;
+    --warning-light: #FFEAA7;
+    --warning-bg: rgba(253, 203, 110, 0.1);
+    --error: #FF6B6B;
+    --error-light: #FF8E8E;
+    --error-bg: rgba(255, 107, 107, 0.1);
+    --info: #74B9FF;
+    --info-light: #A8D8FF;
+    --info-bg: rgba(116, 185, 255, 0.1);
+}
